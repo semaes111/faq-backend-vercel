@@ -1,0 +1,27 @@
+{
+  "name": "faq-dietetica-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "ingest:csv": "ts-node --esm scripts/ingest-csv.ts",
+    "embeddings:backfill": "ts-node --esm scripts/embeddings.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "csv-parser": "^3.0.0",
+    "next": "14.2.5",
+    "openai": "^4.56.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.4",
+    "ts-node": "^10.9.2"
+  }
+}
